@@ -1,0 +1,91 @@
+:root {
+	--color-oscuro: #101820ff;
+	--color-claro: #f2aa4cff;
+}
+
+.body {
+	background-color: var(--color-oscuro);
+	display: flex;
+	font-family: 'lobster', Times, ;
+	color: #101820ff;
+	justify-content: center;
+	text-align: center;
+	margin: 10px;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+footer {
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+}
+
+p {
+	font-size: 15px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main {
+	background-color: var(--color-claro);
+	border-radius: 10px;
+}
+
+#title {
+	padding-top: 20px;
+	border-radius: 10px;
+
+}
+
+/* img div seria el recuadro que guarda la imagen pero para ajustar la imagen esta el id IMAGE  */
+
+.img-box {
+
+	background-color: #101820ff;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+
+}
+
+.imgs {
+	width: 100%;
+	height: auto;
+	max-width: 625px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 10px;
+}
+
+#img-caption {
+	color: #f2aa4cff;
+	margin-top: 5px;
+	padding-bottom: 10px;
+
+}
+
+#tribute-info {
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+#lista {
+	background-color: #101820ff;
+	color: #f2aa4cff;
+	height: auto;
+	border-radius: 5%;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+ul {
+	list-style-position: inside;
+}
