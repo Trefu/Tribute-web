@@ -3,89 +3,113 @@
 	--color-claro: #f2aa4cff;
 }
 
+* {
+	padding: 0;
+	margin: 0;
+}
+
 .body {
 	background-color: var(--color-oscuro);
 	display: flex;
-	font-family: 'lobster', Times, ;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: #101820ff;
 	justify-content: center;
 	text-align: center;
-	margin: 10px;
-	padding: 20px;
+	margin: 20px;
+	padding: 15px;
 }
 
-h1 {
-	font-size: 50px;
+.title {
+	padding: 10px;
+
 }
 
-h2 {
-	font-size: 20px;
+.body h1 {
+	font-size: 40px;
 }
 
-footer {
+.body h2 {
+	font-size: 15px;
+}
+
+.footer {
 	margin-bottom: 20px;
-	padding-bottom: 5px;
+	padding: 5px;
 }
 
 p {
 	font-size: 15px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
 }
 
-#main {
+.main-container {
 	background-color: var(--color-claro);
 	border-radius: 10px;
-}
-
-#title {
-	padding-top: 20px;
-	border-radius: 10px;
-
+	padding: 10px;
 }
 
 /* img div seria el recuadro que guarda la imagen pero para ajustar la imagen esta el id IMAGE  */
 
-.img-box {
-
+.img-container {
+	display: flex;
 	background-color: #101820ff;
-	margin-right: 10px;
-	margin-left: 10px;
-	border-radius: 10px;
+	margin-right: 30px;
+	margin-left: 30px;
+	border-radius: 30px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
+}
+
+.img-container p {
+	margin-bottom: 10px;
 }
 
 .imgs {
 	width: 100%;
 	height: auto;
-	max-width: 625px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+	max-width: 500px;
+	padding: 20px;
+	border-radius: 100px;
+}
+
+.img-container p {
+	color: #f2aa4cff;
+
+
+}
+
+.info-container {
+	display: flex;
+	margin: 10px 30px 30px 10px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tribute-info {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 30px 10px 30px;
+
+}
+
+.lista {
+	display: flex;
+	background-color: #101820ff;
+	color: #f2aa4cff;
+	border-radius: 30px;
+	margin: 10px 30px 10px 30px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	padding: 10px;
 }
 
-#img-caption {
-	color: #f2aa4cff;
-	margin-top: 5px;
-	padding-bottom: 10px;
+.lista ul {
+	list-style: none;
+	font-size: 16px;
 
-}
-
-#tribute-info {
-	margin-right: 50px;
-	margin-left: 50px;
-}
-
-#lista {
-	background-color: #101820ff;
-	color: #f2aa4cff;
-	height: auto;
-	border-radius: 5%;
-	margin-left: 10px;
-	margin-right: 10px;
-
-}
-
-ul {
-	list-style-position: inside;
 }
