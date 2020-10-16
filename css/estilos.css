@@ -6,43 +6,15 @@
 * {
 	padding: 0;
 	margin: 0;
-}
-
-.body {
-	background-color: var(--color-oscuro);
-	display: flex;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	color: #101820ff;
-	justify-content: center;
-	text-align: center;
-	margin: 20px;
-	padding: 15px;
-}
-
-.title {
-	padding: 10px;
-
-}
-
-.body h1 {
-	font-size: 40px;
-}
-
-.body h2 {
-	font-size: 15px;
-}
-
-
-p {
-	font-size: 15px;
-
-
+	display: flexbox;
 }
 
 .main-container {
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--color-claro);
-	border-radius: 10px;
 	padding: 10px;
 
 }
@@ -51,83 +23,85 @@ p {
 
 .img-container {
 	display: flex;
-	background-color: #101820ff;
-	margin: 10px 30px 30px 10px;
-	border-radius: 30px;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-
+	background-color: #101820ff;
+	width: 90%;
+	height: auto;
+	border-radius: 30px;
 }
 
-.img-container p {
-	margin-bottom: 10px;
+header {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
+
 
 .imgs {
-	width: 100%;
-	height: auto;
 	max-width: 600px;
 	padding: 20px;
 	border-radius: 100px;
-
 }
 
 .img-container p {
 	color: #f2aa4cff;
-
-
+	margin-bottom: 5px;
 }
 
 .info-container {
 	display: flex;
-	margin: 10px 30px 30px 10px;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
+	width: 90%;
+	height: auto;
+	padding: 10px;
+	margin: 10px;
+
 }
 
-.tribute-info {
+.cita {
 	display: flex;
 	flex-direction: column;
-	margin: 10px 30px 10px 30px;
-
+	height: auto;
+	padding: 10px;
+	margin: 10px;
 }
 
 .lista {
 	display: flex;
+	flex-direction: column;
 	background-color: #101820ff;
 	color: #f2aa4cff;
-	border-radius: 30px;
-	margin: 10px 30px 10px 30px;
-	justify-content: center;
+	width: 90%;
+	height: auto;
 	align-items: center;
-	flex-direction: column;
+	border-radius: 30px;
 	padding: 10px;
 }
 
 .lista ul {
 	list-style: none;
 	font-size: 16px;
-
 }
 
-.footer-container {
+footer {
+	display: flex;
+	flex-direction: row;
 	background-color: var(--color-oscuro);
 	color: var(--color-claro);
-	display: flex;
-	flex-direction: column;
+	width: 90%;
+	height: auto;
+	justify-content: space-around;
 	margin: 10px 30px 10px 30px;
 	padding: 10px;
 	border-radius: 30px;
-	justify-content: space-around;
+
 }
 
-.footer {}
+
 
 
 .button {
-
 	background-color: var(--color-claro);
 	border: none;
 	color: white;
