@@ -39,7 +39,8 @@ header {
 
 
 .imgs {
-	max-width: 600px;
+	width: 600px;
+	height: 300px;
 	padding: 20px;
 	border-radius: 100px;
 }
