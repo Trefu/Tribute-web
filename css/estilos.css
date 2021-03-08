@@ -1,19 +1,22 @@
+@import "normalize.css";
+
 :root {
-	--color-oscuro: #101820ff;
-	--color-claro: #f2aa4cff;
+	--color-oscuro: #85603f;
+	--color-claro: #9e7540;
+	--color-claro2: #bd9354;
+	--color-claro3: #e3d18a;
+	--letra-grande-g: 11rem;
+	--letra-grande-m: 9rem;
+	--letra-grande-c: 7rem;
+
 }
 
-* {
-	padding: 0;
-	margin: 0;
-	display: flexbox;
-}
 
 
 body {
 	background-color: var(--color-oscuro);
 	font-family: 'Roboto Mono', monospace;
-	font-size: 13px;
+	font-size: 16px;
 }
 
 .main-container {
@@ -35,7 +38,6 @@ body {
 	flex-direction: column;
 	background-color: #101820ff;
 	width: 90%;
-
 	height: auto;
 	border-radius: 30px;
 }
@@ -56,7 +58,9 @@ header {
 
 .imgs {
 	width: 600px;
-	height: 300px;
+	height: auto;
+	max-height: 300px;
+	max-width: 600px;
 	padding: 20px;
 	border-radius: 100px;
 }
