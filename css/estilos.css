@@ -1,74 +1,85 @@
-@import "normalize.css";
-
 :root {
+	--color-negro: #101820ff;
 	--color-oscuro: #85603f;
 	--color-claro: #9e7540;
 	--color-claro2: #bd9354;
 	--color-claro3: #e3d18a;
-	--letra-grande-g: 11rem;
-	--letra-grande-m: 9rem;
-	--letra-grande-c: 7rem;
-
+	--letra-grande-g: 4.5rem;
+	--letra-grande-m: 3.5rem;
+	--letra-grande-c: 2.5rem;
+	--letra-media-g: 1.75rem;
+	--letra-media-m: 1.375rem;
+	--letra-media-c: 1rem;
+	--letra-chica-c: 0.375rem:;
+	--letra-chica-m: 0.625rem:;
+	--letra-chica-g: 0.875rem:;
+	font-size: 16px;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Slab:wght@300&display=swap');
 
 body {
+	box-sizing: border-box;
 	background-color: var(--color-oscuro);
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto Slab', serif;
 	font-size: 16px;
+	font-weight: 300;
 }
 
 .main-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	width: 900px;
 	background-color: var(--color-claro);
-	margin: auto;
 
 }
 
-/* img div seria el recuadro que guarda la imagen pero para ajustar la imagen esta el id IMAGE  */
+.main-container__header {
+	line-height: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url("../imagenes/bgHeader.jpg");
+	background-size: cover;
+	color: var(--color-claro3);
+	width: 100vw;
+	height: 100vh;
 
-.img-container {
+}
+
+.main-container__header h1 {
+	font-size: var(--letra-grande-g);
+
+	margin-bottom: 0.5rem;
+	padding: 1rem;
+}
+
+.main-container__header h2 {
+	font-size: var(--letra-grande-c);
+}
+
+.main-container__img-container {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background-color: #101820ff;
-	width: 90%;
-	height: auto;
-	border-radius: 30px;
+	background-color: var(--color-negro);
 }
 
-#img-caption {
-	margin-bottom: 10px;
+.main-container__img-container p {
+	font-size: var(--letra-media-g);
+	color: var(--color-claro3);
 }
 
-header {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	font-size: 14px;
-	margin: 10px;
-	padding: 20px;
-}
+.img-container__img {
+	width: 70%;
+	max-height: 1200px;
+	max-width: 800px;
+	min-height: 300px;
 
 
-.imgs {
-	width: 600px;
-	height: auto;
-	max-height: 300px;
-	max-width: 600px;
-	padding: 20px;
-	border-radius: 100px;
 }
 
-.img-container p {
-	color: #f2aa4cff;
-	margin-bottom: 5px;
-}
 
 .info-container {
 	display: flex;
@@ -89,50 +100,87 @@ header {
 	margin: 10px;
 }
 
-.cita p {
-	font-size: 12px;
-}
 
-.cita blockquote {
-	font-size: 13px;
-}
 
 .lista {
 	display: flex;
 	flex-direction: column;
-	background-color: #101820ff;
+	background-color: var(--color-negro);
 	color: #f2aa4cff;
 	width: 90%;
 	height: auto;
 	align-items: center;
 	border-radius: 30px;
-	padding: 10px;
+	padding: 1rem;
 
 }
 
 .lista ul {
 	list-style: none;
-	font-size: 13px;
+	margin: 0.5rem;
+
 }
 
 footer {
 	display: flex;
-	flex-direction: row;
-	color: var(--color-claro);
-	width: 90%;
-	height: auto;
+	background-color: var(--color-oscuro);
+	width: 80%;
+	padding: 2rem;
+	margin: 1rem;
 	justify-content: space-between;
-	margin: 10px 30px 10px 30px;
-	padding: 10px;
-	border-radius: 30px;
+	border-radius: 1rem;
 }
 
 footer a {
-	color: var(--color-oscuro);
+	color: var(--color-claro3);
 	text-decoration: none;
+	font-size: var(--letra-chica-m);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	:root {
+		font-size: 11px;
+	}
+
+	body {
+		background-color: red;
+	}
+
+	.main-container {
+		width: 100%;
+		height: 100%;
+
+	}
 
 }
 
-span {
-	font-size: 10px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	body {
+		background-color: blue;
+	}
+
+	.main-container {}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body {
+		background-color: violet;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	body {
+		background-color: green;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	body {
+		background-color: black;
+	}
 }
