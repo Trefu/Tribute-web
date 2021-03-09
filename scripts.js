@@ -1,5 +1,3 @@
-window.onload = cambiarImagenes();
-
 $(document).ready(function () {
     $("#downBtn").on('click', function (e) {
         e.preventDefault();
