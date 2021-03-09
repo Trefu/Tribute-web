@@ -1,19 +1,15 @@
-var i = 0;
-let timer = 3000;
-let imagenes = []
-imagenes[0] = 'imagenes/image1.jpg';
-imagenes[1] = 'imagenes/image2.jpg';
-imagenes[2] = 'imagenes/image3.jpg';
-imagenes[3] = 'imagenes/image4.jpg';
-
-function cambiarImagenes() {
-    document.getElementById("image").src = imagenes[i]
-    if (i < imagenes.length - 1) {
-        i++
-
-    } else {
-        i = 0;
-    }
-    setTimeout('cambiarImagenes()', 4000)
-}
 window.onload = cambiarImagenes();
+
+$(document).ready(function () {
+    $("#downBtn").on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top + 2
+        }, 1000, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});

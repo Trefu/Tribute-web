@@ -1,0 +1,23 @@
+{
+  "name": "tribute-locche",
+  "version": "1.0.0",
+  "description": "tribute web page ",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trefu/Tribute-web.git"
+  },
+  "author": "Lucas Leonel Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trefu/Tribute-web/issues"
+  },
+  "homepage": "https://github.com/Trefu/Tribute-web#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "jquery": "^3.6.0"
+  }
+}
