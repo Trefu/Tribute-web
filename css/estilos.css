@@ -39,7 +39,7 @@ body {
 	opacity: 0.9;
 	background-size: cover;
 	color: var(--color-claro3);
-	width: 100vw;
+	width: 98vw;
 	height: 100vh;
 	filter: contrast(1.2);
 }
@@ -85,9 +85,8 @@ a {
 .img-container__img {
 	width: 100%;
 	max-height: 100rem;
+	max-width: 95vw;
 	min-height: 45rem;
-	filter: drop-shadow(0 0 0.75rem var(--color-claro3));
-	filter: opacity(90%);
 	filter: grayscale(100%);
 }
 
